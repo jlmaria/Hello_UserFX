@@ -23,8 +23,8 @@ public class Controller {
     @FXML
     public static void Close_Request(){
 
-        int confirmar = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Closing", JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
-        if (confirmar == JOptionPane.OK_OPTION) {
+        int confirm = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Closing", JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
+        if (confirm == JOptionPane.OK_OPTION) {
 
             JOptionPane.showMessageDialog(null, "Thanks for use the Hello User app", "Exit", JOptionPane.INFORMATION_MESSAGE);
             Platform.exit();
