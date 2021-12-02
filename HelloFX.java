@@ -18,7 +18,10 @@ public class HelloFX extends Application{
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setOnCloseRequest(evt -> Controller.Close_Request());
+        stage.setOnCloseRequest(e -> {
+            e.consume();
+            Controller.Close_Request();
+                });
         stage.show();
 
 
